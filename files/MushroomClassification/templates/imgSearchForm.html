@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 검색</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>버섯명(국문)</th>
+        <th>버섯명(학명)</th>
+        <th>버섯 사진</th>
+        <th>컨텐츠 출처기관</th>
+    </tr>
+
+    {% for data in List %}
+    <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td><img src="{{data[2]}}" width="150" height="100"></td>
+        <td>{{data[3]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
