@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 검색</title>
+</head>
+<body>
+<h3>입력 창</h3>
+<h3>버섯도감 검색</h3>
+<form action="/img/imgSearchForm" method="POST">
+    <div>
+        <input type="hidden" name="pageNo" value="1">
+        <input type="hidden" name="numOfRows" value="10">
+        <input type="hidden" name="option" value="" placeholder="검색 구분"></br>
+        <input type="text" name="searchWord" placeholder="검색어">
+        <input type="submit" value="검색"></br>
+        <input type="button" value="메인화면" onclick="location.href='http://127.0.0.1:5000/'">
+    </div>
+</form>
+
+</body>
+</html>
